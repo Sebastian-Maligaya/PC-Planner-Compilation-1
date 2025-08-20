@@ -1,0 +1,135 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background-color: #0e1a40;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  z-index: 100;
+  flex-wrap: wrap;
+  margin-top: 0%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a4bdf1;
+}
+
+.sign-in {
+  padding: 0.5rem 0.75rem;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sign-in {
+  border: 1px solid #2563EB;
+  background-color:#3575ff;
+  color: #ffffff;
+}
+
+.sign-in:hover {
+  background-color: rgb(7, 10, 151);
+  color: white;
+}
+
+/* Responsive Styles */
+/* === Mobile Styles (≤ 768px) === */
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 40vh;
+    width: 246px;
+    background-color:#0e1a40;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+    transition: right 0.3s ease;
+    z-index: 200;
+    position:absolute;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: white;
+    border: none;
+    background: none;
+    z-index: 250;
+  }
+
+  .nav-link, .sign-in {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* === Desktop Styles (≥ 769px) === */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    height: auto;
+    background: none;
+    padding: 0;
+  }
+}

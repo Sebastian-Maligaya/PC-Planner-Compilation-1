@@ -1,0 +1,180 @@
+.budget-tips-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+  text-align: center;
+  margin-top: 0;
+}
+
+.page-description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #475569;
+  text-align: center;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #3b82f6;
+  border-left-width: 6px;
+  border-radius: 0.75rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.card h2,
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  margin: 0.5rem 0 0;
+  color: #475569;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.dropdown {
+  margin-bottom: 1.5rem;
+}
+
+.dropdown-button {
+  background-color: #eff6ff;
+  border: 2px solid #3b82f6;
+  color: #1e3a8a;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  text-align: left;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 1rem;
+}
+
+.dropdown-button:hover {
+  background-color: #dbeafe;
+}
+
+.dropdown-content {
+  background-color: #f1f5f9;
+  border-left: 4px solid #3b82f6;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+/* BUILD TABS */
+.build-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0 1.5rem;
+  justify-content: center;
+}
+
+.build-nav button {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #38bdf8;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  min-width: 100px;
+}
+
+.build-nav button:hover {
+  background-color: #bae6fd;
+  color: #0c4a6e;
+}
+
+.build-nav .active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.build-details h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.build-details ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.build-details ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+  color: #475569;
+  word-break: break-word;
+}
+
+
+@media (max-width: 480px) {
+  .budget-tips-page {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem 1.25rem;
+  }
+
+  .build-nav {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .dropdown-button {
+    font-size: 0.95rem;
+  }
+
+  .build-details h3 {
+    font-size: 1rem;
+  }
+
+  .build-nav button {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}
